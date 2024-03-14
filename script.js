@@ -3,7 +3,7 @@ const submit = document.querySelector(".submit");
 submit.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const user = document.querySelector("#user").value;
+    const user = document.querySelector("#user").value.trim();
     const password = document.querySelector("#password").value;
 
      authenticateUser(user, password)
